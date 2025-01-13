@@ -3,9 +3,8 @@ import WelcomeScreen from './components/screens/inicio.vue'
 </script>
 
 <template>
-
+ <router-view></router-view>
   <main>
-    <WelcomeScreen />
   </main>
 </template>
 

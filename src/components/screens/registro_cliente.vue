@@ -4,15 +4,15 @@
       <form @submit.prevent="submitForm" class="form-container">
         <div class="form-group">
           <label for="name">Nombre:</label>
-          <input type="text" id="name" v-model="name" placeholder="Ingresa tu nombre" />
+          <input type="text" id="name" v-model="cliente.name" placeholder="Ingresa tu nombre" />
         </div>
         <div class="form-group">
           <label for="phone">Celular:</label>
-          <input type="tel" id="phone" v-model="phone" placeholder="Ingresa tu celular" />
+          <input type="tel" id="phone" v-model="cliente.phone" placeholder="Ingresa tu celular" />
         </div>
         <div class="form-group">
           <label for="email">Correo:</label>
-          <input type="email" id="email" v-model="email" placeholder="Ingresa tu correo" />
+          <input type="email" id="email" v-model="cliente.email" placeholder="Ingresa tu correo" />
         </div>
         <button @click = "submitCliente()" type="submit" class="button-submit">Registrar</button>
       </form>

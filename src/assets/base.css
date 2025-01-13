@@ -1,0 +1,77 @@
+
+:root {
+  --color-1: #d4afb9;
+  --color-2: #d1cfe2;
+  --color-3: #9cadce;
+  --color-4: #7ec4cf;
+  --color-5: #daeaf6;
+}
+
+:root {
+  --dark_color-1: #9f6d7e;
+  --dark_color-2: #8e96b3;
+  --dark_color-3: #6c7b98;
+  --dark_color-4: #4a7c8b;
+  --dark_color-5: #9faecf;
+}
+
+:root {
+  --color-background: var(--dark_color-3)
+  --color-background-soft: var(--dark_color-2);
+
+  --color-border: var(--color-4);
+  --color-border-hover: var(--color-3);
+
+  --color-heading: var(--color-1);
+  --color-text: var(--color-5);
+  --section-gap: 160px;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--dark_color-3)
+    --color-background-soft: var(--dark_color-2);
+
+    --color-border: var(--dark_color-4);
+    --color-border-hover: var(--dark_color-3);
+
+    --color-heading: var(--dark_color-1);
+    --color-text: var(--dark_color-5);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
